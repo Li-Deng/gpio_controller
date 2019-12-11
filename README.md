@@ -26,8 +26,11 @@ Raspbian-buster-lite
   * Remove `console=...` in `/boot/cmdline.txt`
 
 
-
-**Note** server should be little endian
+### Usage
+clone this repo to both your PC and raspberry pi.
+* gpio_controller.py: run as a daemon on pi
+* pc_program_example.py: run on PC and it is just a template
+both of them use the configuration file **configure.py**. Modify it according to your situation.
 
 ### Deploy methods
 

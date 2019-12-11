@@ -36,6 +36,9 @@ config_info = {
     "interval": 1.0,  # global interval as a standard
 }
 
+# create the crc function
+crc8_func = crcmod.predefined.mkCrcFun('crc-8')
+
 # example bytes array which will be used in the 3rd byte position and
 # indicate each individual LED states
 test_data = [
@@ -119,8 +122,6 @@ def main():
 
     ser_conf = config_info["serial"]
 
-    # create the crc function
-    crc8_func = crcmod.predefined.mkCrcFun('crc-8')
     # read buffer
     data_frame = bytearray(4)
 
