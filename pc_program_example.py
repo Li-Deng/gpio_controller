@@ -50,7 +50,8 @@ test_data = [
     8,
     4,
     2,
-    1
+    1,
+    0
 ]
 
 def initialization():
@@ -140,7 +141,7 @@ def main():
             for s in test_data:
                 data_frame = create_data_frame(s)
                 ser.write(data_frame)
-                time.sleep(1)
+                time.sleep(3)
 
         ser.close()
 
