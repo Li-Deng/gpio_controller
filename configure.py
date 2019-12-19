@@ -11,19 +11,19 @@ default_config_info = {
     },
     "pin_map": {
         "node": {
-            "norm": 29,
+            "norm": 33,
             "err": 31,
-            "sync": 33,
+            "sync": 29,
         },
         "network": {
-            "norm": 35,
+            "norm": 32,
             "err": 37,
-            "rec": 32
+            "rec": 35
         },
         "storage": {
-            "norm": 36,
+            "norm": 40,
             "err": 38,
-            "rec": 40
+            "rec": 36
         }
     },
     "interval": 0.5,
